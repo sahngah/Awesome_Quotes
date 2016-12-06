@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <title>Quoting Dojo Redux</title>
+    </head>
+    <body>
+        <h1>Here are the awesome quotes!</h1>
+        @Each
+            <h3>"@Current.quote"</h3>
+            <p> - @Current.username at @Current.created_at</p><br>
+        @EndEach
+        <form action="/"><input type="submit" value="Go Back to the Mainpage!"></form>
+    </body>
+</html>

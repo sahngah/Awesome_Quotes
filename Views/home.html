@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <title>Quoting Dojo Redux</title>
+    </head>
+    <body>
+        <h1>Welcome to QuotingDojo</h1>
+        @If.Context.ViewBag.error
+        <h4>Failed to add the quote! Please try again!
+        </h4>
+        @EndIf
+        <form action="/quotes" method="post">
+            Your Name: <input type="text" name="username"><br>
+            Your Quote: <textarea name="quote" cols="40" rows="10"></textarea><br>
+            <input type="submit" value="Add my Quote!">
+        </form>
+        <form action="/quotes">
+        <input type="submit" value="Skip to Quotes!"></form>
+    </body>
+</html>
